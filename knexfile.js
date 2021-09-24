@@ -4,7 +4,7 @@ module.exports = {
   development: {
     client: "pg",
     connection: {
-      ssl: true,
+      ssl: false,
       port: 5432,
       host: Environment.POSTGRES_HOSTNAME,
       database: Environment.POSTGRES_DATABASE,
@@ -15,7 +15,7 @@ module.exports = {
   production: {
     client: "pg",
     connection: {
-      ssl: true,
+      ssl: false,
       port: 5432,
       host: Environment.POSTGRES_HOSTNAME,
       database: Environment.POSTGRES_DATABASE,

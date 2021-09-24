@@ -1,11 +1,11 @@
 export const NODE = process.env.NODE_ENV || "development";
 export const IS_PRODUCTION = NODE === "production";
 export const PORT = process.env.PORT || 6464;
-export const SOURCE = process.env.SOURCE;
+export const SOURCE = process.env.SOURCE || 'fiji';
 
-if (!IS_PRODUCTION) {
+// if (!IS_PRODUCTION) {
   require("dotenv").config();
-}
+// }
 
 export const POSTGRES_ADMIN_PASSWORD = process.env.POSTGRES_ADMIN_PASSWORD;
 export const POSTGRES_ADMIN_USERNAME = process.env.POSTGRES_ADMIN_USERNAME;
